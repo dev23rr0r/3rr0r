@@ -1,4 +1,3 @@
-rm -rf /overlay/upper/etc/config/network
 cat > /overlay/upper/etc/config/network <<-NETTY1
 config interface 'loopback'
         option ifname 'lo'

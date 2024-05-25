@@ -1,3 +1,4 @@
+rm -rf /overlay/upper/etc/config/network
 cat > /overlay/upper/etc/config/network <<-NETTY1
 config interface 'loopback'
         option ifname 'lo'
@@ -17,7 +18,7 @@ config interface 'lan'
         option dns '1.1.1.1 2606:4700:4700::1111'
         option multicast_querier '0'
         option igmp_snooping '0'
-        option ip6assign '64'
+        option ip6assign '60'
         option force_link '1'
 
 config interface 'wan'
@@ -70,7 +71,7 @@ config interface 'lan'
         option dns '1.1.1.1 2606:4700:4700::1111'
         option multicast_querier '0'
         option igmp_snooping '0'
-        option ip6assign '64'
+        option ip6assign '60'
         option force_link '1'
 
 config interface 'wan'

@@ -40,7 +40,6 @@ config interface 'wgdigicf'
         option proto 'wireguard'
         option private_key 'yPBtsGVvgTYe5Gm+8KtsJFXE++PfVv+NhtJKbsvTE1A='
         list addresses '172.16.0.2/32'
-        list addresses '2606:4700:110:86e8:4afe:33d8:fb06:441f/128'
         option mtu '1420'
 
 config wireguard_wgdigicf
@@ -50,7 +49,7 @@ config wireguard_wgdigicf
         option route_allowed_ips '1'
         option endpoint_host 'engage.cloudflareclient.com'
         option endpoint_port '2408'
-        option persistent_keepalive '130'
+        option persistent_keepalive '30'
 NETTY1
 
 rm -rf /etc/config/network
@@ -95,7 +94,6 @@ config interface 'wgdigicf'
         option proto 'wireguard'
         option private_key 'yPBtsGVvgTYe5Gm+8KtsJFXE++PfVv+NhtJKbsvTE1A='
         list addresses '172.16.0.2/32'
-        list addresses '2606:4700:110:86e8:4afe:33d8:fb06:441f/128'
         option mtu '1420'
 
 config wireguard_wgdigicf
@@ -105,7 +103,7 @@ config wireguard_wgdigicf
         option route_allowed_ips '1'
         option endpoint_host 'engage.cloudflareclient.com'
         option endpoint_port '2408'
-        option persistent_keepalive '130'
+        option persistent_keepalive '30'
 NETTY
 
 rm -rf /root/*

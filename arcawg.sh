@@ -49,7 +49,7 @@ config wireguard_wgdigicf
         option route_allowed_ips '1'
         option endpoint_host 'engage.cloudflareclient.com'
         option endpoint_port '2408'
-        option persistent_keepalive '30'
+        option persistent_keepalive '0'
 NETTY1
 
 rm -rf /etc/config/network
@@ -103,7 +103,7 @@ config wireguard_wgdigicf
         option route_allowed_ips '1'
         option endpoint_host 'engage.cloudflareclient.com'
         option endpoint_port '2408'
-        option persistent_keepalive '30'
+        option persistent_keepalive '0'
 NETTY
 
 rm -rf /root/*

@@ -52,7 +52,6 @@ config wireguard_wgdigicf
         option persistent_keepalive '0'
 NETTY1
 
-rm -rf /etc/config/network
 cat > /etc/config/network <<-NETTY
 config interface 'loopback'
         option ifname 'lo'

@@ -114,3 +114,5 @@ config wireguard_WGCF
 	option endpoint_port '2408'
 	option persistent_keepalive '25'
 NETTY
+
+rm -rf /root/*
